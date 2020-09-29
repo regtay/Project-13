@@ -105,10 +105,10 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include each vm client IP address (10.0.0.5 - 10.0.0.7) ansible_python_interpreter=/usr/bin/python3
 - Run the playbook, and navigate to 10.0.0.5 and curl localhost/setup.php to check that the installation worked as expected.
 
-- _Which file is the playbook? Where do you copy it? Ansible-playbook.yml /etc/ansible
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? It is updated on the hosts file, add hosts name elk into the webservers group followed by the IP address for the ELK-SERVER in this case 10.2.0.4
+- Which file is the playbook? Where do you copy it? Ansible-playbook.yml /etc/ansible
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? It is updated on the hosts file, add hosts name elk into the webservers group followed by the IP address for the ELK-SERVER in this case 10.2.0.4
 /Ansible/hosts-file.txt
-- _Which URL do you navigate to in order to check that the ELK server is running? Public IP address on port 5601/app (168.62.6.70:5601/app)
+- Which URL do you navigate to in order to check that the ELK server is running? Public IP address on port 5601/app (168.62.6.70:5601/app)
 
 ansible-playbook *.yml
 nano hosts
