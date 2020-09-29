@@ -66,10 +66,9 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible? configuration management and provisioning
+- What is the main advantage of automating configuration with Ansible? configuration management and provisioning
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - .Install docker
 - .Install pip3
 - .Install docker python module
@@ -83,7 +82,6 @@ Images/docker ps
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring 
 Web-1 10.0.0.5
 Web-2 10.0.0.6 
 Web-3 10.0.0.7
@@ -112,8 +110,7 @@ SSH into the control node and follow the steps below:
 /Ansible/hosts-file.txt
 - _Which URL do you navigate to in order to check that the ELK server is running? Public IP address on port 5601/app (168.62.6.70:5601/app)
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-Ansible-playbook *.yml
+ansible-playbook *.yml
 nano hosts
 nano ansible.cfg
 nano *.yml 
